@@ -57,3 +57,18 @@ if __name__ == '__main__':
     line_plot()
 
     print("terminamos")
+
+    # figura y eje
+    fig = plt.figure()
+    fig.suptitle('Gráfico Personalizado Y=X^2', fontsize=12)
+    ax = fig.add_subplot()
+
+    # Graficar línea con color 
+    ax.plot(x, y, c='blue', marker='o', label='función: y = x^2')
+    ax.legend()
+    ax.grid()
+    ax.set_facecolor('lavender')  
+
+    # Mostrar gráfico
+    plt.show()
+
